@@ -8,15 +8,15 @@ export default function Majors() {
             "title": "Front-end",
             "subjects": "HTML, CSS, JavaScript, TypeScript, React, WebAPIs"            
         },
-        {
-            "icon": "mobile",
-            "title": "Mobile",
-            "subjects": "Android Studio, React Native, iOS, Swift, Java, Kotlin"            
-        },
+        // {
+        //     "icon": "mobile",
+        //     "title": "Server",
+        //     "subjects": "Node.js, Express.js"            
+        // },
         {
             "icon": "server",
             "title": "Back-end",
-            "subjects": "Java, JavaScript, Go, Kotlin, Spring, Spring Boot"            
+            "subjects": "Node.js, Express.js, MySQL"            
         }
     ];
     return (

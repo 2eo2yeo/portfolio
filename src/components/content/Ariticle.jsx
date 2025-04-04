@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Ariticle({type}) {
+export default function Ariticle({ type }) {
     const data = {
         "tools": [
             "Visual Studio Code",
@@ -9,27 +9,19 @@ export default function Ariticle({type}) {
             "iOS development tools",
             "Eclipse"
         ],
-        "etc":[
-            "Git",
-            "Scrum Master",
-            "SVN"
+        "etc": [
+            "Git"
         ]
-    }; 
+    };
 
     return (
-        <article class="skills__tools">
-            <h3 class="skill__title">{type}</h3>
+        <article className={type === 'Etc' ? 'skills__etc' : 'skills__tools'}>
+            <h3 className="skill__title">{type}</h3>
             <ul>
-                {type === 'Tools' ? 
-                    data.tools.map(item =>
-                        <li>{item}</li>
-                    )
-                    : data.etc.map(item => 
-                        <li>{item}</li>
-                    )
-                }                
+                {(type === 'Tools' ? data.tools : data.etc).map((item, index) =>
+                    <li key={index}>{item}</li>
+                )}
             </ul>
         </article>
     );
 }
-

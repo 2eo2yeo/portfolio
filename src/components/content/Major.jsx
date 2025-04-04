@@ -11,10 +11,10 @@ export default function Major({icon, title, subjects}) {
                     && <FontAwesomeIcon 
                             className="fa-brands fa-html5 major__icon" 
                             icon={faHtml5} />}
-            {icon === 'mobile' 
+            {/* {icon === 'mobile' 
                     && <FontAwesomeIcon 
                             className="fa-brands fa-html5 major__icon" 
-                            icon={faMobile} />} 
+                            icon={faMobile} />}  */}
             {icon === 'server' 
                     && <FontAwesomeIcon 
                             className="fa-brands fa-html5 major__icon" 

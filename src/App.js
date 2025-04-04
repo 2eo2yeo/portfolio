@@ -25,16 +25,15 @@ function App() {
     {
       "id": "about",
       "title": "About me",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus, temporibus perspiciatis repudiandae nostrum modi doloremque expedita non eius ipsum! Beatae porro adipisci omnis architecto dignissimos. Iusto ipsa inventore adipisci.",
       "children": [
         { "component": "Majors" },
-        { "component": "Jobs" }
+        // { "component": "Jobs" }
       ]
     },
     {
       "id": "skill",
       "title": "My Skills",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis beatae, aliquid ratione commodi nam ex voluptate rem eveniet cupiditate optio natus? Cum, harum eum sint id quod nulla adipisci. Sunt?",
+      // "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis beatae, aliquid ratione commodi nam ex voluptate rem eveniet cupiditate optio natus? Cum, harum eum sint id quod nulla adipisci. Sunt?",
       "children": [
         {
           "component": "Skills",
@@ -55,14 +54,14 @@ function App() {
         { "component": "Projects" }
       ]
     },
-    {
-      "id": "testimonial",
-      "title": "Testimonial",
-      "description": "See what they say about me",
-      "children": [
-        { "component": "Testimonials" }
-      ]
-    }
+    // {
+    //   "id": "testimonial",
+    //   "title": "Testimonial",
+    //   "description": "See what they say about me",
+    //   "children": [
+    //     { "component": "Testimonials" }
+    //   ]
+    // }
   ];
 
   const componentMap = {
@@ -73,10 +72,10 @@ function App() {
     Ariticle,
     Categories,
     Projects,
-    Testimonials
+    // Testimonials
   };
 
-  //자식 컴포넌트 렌더링 :: 재귀함수
+
   const renderComponent = (childObj) => {  
     const Component = componentMap[childObj.component]; 
     if (!Component) return null;
@@ -91,13 +90,12 @@ function App() {
   return (
     <>
       <Header>
-        <Logo 
-          img="/images/favicon.ico"  name="Judy"/>
+        <Logo name="SeoRyeong"/>
         <MenuList />
         <ToggleButton />
       </Header>
       <Content>
-        <Home img="/images/favicon.ico" name="Judy"/>
+        <Home img="images/photo.jpg" name="SeoRyeong"/>
 
         {sectionList && sectionList.map((section) => (
           <SectionWrap

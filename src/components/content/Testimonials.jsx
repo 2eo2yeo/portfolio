@@ -4,7 +4,7 @@ import Testimonial from './Testimonial.jsx';
 export default function Testimonials() {
     const testimonialList = [
         {
-            "img": "/images/testimonials/people1.webp",
+            "img": "/images/testimonials/people1.jpg",
             "alt": "people1",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis similique, unde nam totam quam, nisi odio error amet provident iste modi eos dicta, eum suscipit rem illum inventore sapiente blanditiis?",
             "name": "James Kim",
