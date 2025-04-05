@@ -6,7 +6,7 @@ import {faServer} from "@fortawesome/free-solid-svg-icons";
 
 export default function Major({icon, title, subjects}) {
     return (
-        <>
+        <div style={{}}>
             {icon === 'html'  
                     && <FontAwesomeIcon 
                             className="fa-brands fa-html5 major__icon" 
@@ -21,7 +21,7 @@ export default function Major({icon, title, subjects}) {
                             icon={faServer} />} 
             <p class="major__title">{title}</p>
             <p>{subjects}</p>
-        </>
+        </div>
     );
 }
 

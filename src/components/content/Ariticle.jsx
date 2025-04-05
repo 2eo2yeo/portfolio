@@ -3,14 +3,12 @@ import React from 'react';
 export default function Ariticle({ type }) {
     const data = {
         "tools": [
-            "Visual Studio Code",
-            "IntelliJ",
-            "Android Studio Code",
-            "iOS development tools",
-            "Eclipse"
+            "Visual Studio Code"
         ],
         "etc": [
-            "Git"
+            "Git",
+            "GitHub",
+            "Notion"
         ]
     };
 

@@ -5,26 +5,30 @@ export default function Coding() {
     const codeList = [
         {
             "title":"HTML",
-            "percent": 70
-        },
-        {
-            "title":"CSS",
-            "percent": 90
-        },
-        {
-            "title":"JavaScript",
-            "percent": 90
-        },
-        {
-            "title":"TypeScript",
             "percent": 80
         },
         {
+            "title":"CSS",
+            "percent": 80
+        },
+        {
+            "title":"JavaScript",
+            "percent": 70
+        },
+        {
+            "title":"TypeScript",
+            "percent": 0
+        },
+        {
             "title":"React",
-            "percent": 98
+            "percent": 80
         },
         {
             "title":"NodeJS",
+            "percent": 60
+        },
+        {
+            "title":"MySQL",
             "percent": 60
         },
     ];

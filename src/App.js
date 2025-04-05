@@ -1,3 +1,4 @@
+import  React, { useState } from 'react';
 import './css/style.css';
 import Header from './components/Header.jsx';
 import Content from './components/Content.jsx';
@@ -14,17 +15,21 @@ import Coding from './components/content/Coding.jsx';
 import Ariticle from './components/content/Ariticle.jsx';
 import Categories from './components/content/Categories.jsx';
 import Projects from './components/content/Projects.jsx';
-import Testimonials from './components/content/Testimonials.jsx';
 import Arrow from './components/content/Arrow.jsx';
 import Top from './components/footer/Top.jsx';
 import ContactLinks from './components/footer/ContactLinks.jsx';
 import Bottom from './components/footer/Bottom.jsx';
+import ProjectSection from './components/content/ProjectSection'; // 추가
+
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // 햄버거 메뉴
+
   const sectionList = [
     {
       "id": "about",
       "title": "About me",
+       "description": "2024.10 ~2025.05 웹/앱개발 프론트엔드 취업캠프 수료",
       "children": [
         { "component": "Majors" },
         // { "component": "Jobs" }
@@ -47,7 +52,7 @@ function App() {
     },
     {
       "id": "work",
-      "title": "My work",
+      "title": "My Projects",
       "description": "Projects",
       "children": [
         { "component": "Categories" },
@@ -91,31 +96,32 @@ function App() {
     <>
       <Header>
         <Logo name="SeoRyeong"/>
-        <MenuList />
-        <ToggleButton />
+        <MenuList  isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
+        <ToggleButton onClick={() => setIsMenuOpen(!isMenuOpen)} />
       </Header>
       <Content>
-        <Home img="images/photo.jpg" name="SeoRyeong"/>
-
-        {sectionList && sectionList.map((section) => (
-          <SectionWrap
-            key={section.id}
-            id={section.id}
-            title={section.title}
-            description={section.description}
-          >
-            {section.children.map((child) => renderComponent(child))}
-
-          </SectionWrap>
-        ))}   
+        <Home img="images/photo.jpg" name="정서령"/>
+        {sectionList.map((section) => (
+  <SectionWrap
+    key={section.id}
+    id={section.id}
+    title={section.title}
+    description={section.description}
+  >
+    {section.id === 'work'
+      ? <ProjectSection /> // 여기에만 직접 컴포넌트 넣기
+      : section.children?.map((child) => renderComponent(child))
+    }
+  </SectionWrap>
+))}
 
         {/* Arrow up */}
         <Arrow />
       </Content>
       <Footer>
         <Top 
-          title="Let's talk"
-          description="jeon.developer.judy@gmail.com"
+          title="Contect Me"
+          description="2eo2yeo@gmail.com"
           />
         <ContactLinks />
         <Bottom />
