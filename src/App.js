@@ -52,8 +52,8 @@ function App() {
     },
     {
       "id": "work",
-      "title": "My Projects",
-      "description": "Projects",
+      "title": "Projects",
+      "description": "아래 이미지 클릭 시 이동합니다",
       "children": [
         { "component": "Categories" },
         { "component": "Projects" }

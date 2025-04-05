@@ -7,7 +7,7 @@ export default function MenuList({ isOpen, setIsOpen }) {
         {"href": "#home", "name":"Home"},
         {"href": "#about", "name":"About"},
         {"href": "#skill", "name":"Skills"},
-        {"href": "#work", "name":"My Projects"},
+        {"href": "#work", "name":"Projects"},
         {"href": "#contact", "name":"Contact"},
         {"href": "https://github.com/2eo2yeo", "name":"Github", "target": "_blank"},
     ];

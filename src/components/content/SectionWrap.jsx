@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function SectionWrap({ id, title, description, children }) {
-  const isWhiteTitle = ["My Skills", "My Projects"].includes(title);
+  const isWhiteTitle = ["My Skills", "Projects"].includes(title);
 
   return (
     <section id={id} className="section max-container">
