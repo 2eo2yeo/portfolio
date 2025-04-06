@@ -9,7 +9,7 @@ export default function Home({ img, name }) {
 
                 </div>
                 <h2 className="home__title">안녕하세요 <br />
-                    <strong className="home__title--strong"> 꾸준히 성장 하는</strong><br/>신입 개발자 {name} 입니다.</h2>
+                    <strong className="home__title--strong"> 꾸준히 성장하는</strong><br/>신입 개발자 {name} 입니다.</h2>
 
             {/* <p className="home__description">A software engineer currently residing in Seoul, South Korea</p> */}
             </div>
