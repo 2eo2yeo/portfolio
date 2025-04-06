@@ -172,16 +172,29 @@
 
 .avatar_wrap {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
-    margin: 0 0 15px 0;
+    width: 650px;
+    margin: 0 auto;
 }
 
+
+/* .dotted_wrapper {
+  display: inline-block;
+  padding: 5px;
+  border: 6px dotted var(--color-green);
+  border-radius: 20px;
+  background-color: transparent;
+  width: fit-content;
+} */
+
+
 .home__avatar {
-    width: 180px;
-    height: auto;
-    border-radius: 10px;
+  display: block;
+  width: 180px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.35);
     
 }
 .home__title {
@@ -191,6 +204,8 @@
     opacity: 0;
     transform: translateX(-100px); /* 왼쪽에서 시작 */
     animation: slideIn 0.8s ease-out forwards;
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* 최소, 뷰포트 기준, 최대 */
+    white-space: nowrap;  /* 줄바꿈 방지 */
 }
 
 @keyframes slideIn {
@@ -202,6 +217,8 @@
 .home__title--strong {
     color: var(--color-indie-pink);
     font-size: 2.7rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* 최소, 뷰포트 기준, 최대 */
+    white-space: nowrap;  /* 줄바꿈 방지 */
 }
 .home__description {
     font-size: 1.3rem;
@@ -504,6 +521,19 @@
         
     }
 
+    .avatar_wrap {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;      
+      padding: 0 1rem;   /* 좌우 여백 */
+      box-sizing: border-box; 
+    }
+  
+    .home__title {
+      text-align: center; 
+    }
+
     .description {
         font-size: 1rem;
     }
@@ -533,7 +563,7 @@
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: rgba(233, 228, 199, 0.9);  /* 헤더 배경과 일치 */
+        background-color: rgba(233, 228, 199, 0.9);
         padding: 10px 5px 30px 5px;
         gap: 1.5rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -544,11 +574,11 @@
       }
       
     #home {
-        padding: 5rem 3rem;
+        padding: 4rem 2.5rem;
     }
     .home__title {
         font-size: 2rem;
-        margin-bottom: 0.5rem;
+        margin-top: 1.5rem;
     }
     .home__title--strong {
         font-size: 2.5rem;
@@ -608,6 +638,17 @@
     }
     .description {
         font-size: 1rem;
+    }
+
+    .avatar_wrap {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+    }
+  
+    .home__title {
+      text-align: center;
     }
     .header {
         flex-direction: column;

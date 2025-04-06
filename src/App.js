@@ -100,7 +100,7 @@ function App() {
         <ToggleButton onClick={() => setIsMenuOpen(!isMenuOpen)} />
       </Header>
       <Content>
-        <Home img={`${process.env.PUBLIC_URL}/images/photo.jpg`} name="정서령"/>
+        <Home img={`${process.env.PUBLIC_URL}/images/photo.png`} name="정서령"/>
         {sectionList.map((section) => (
   <SectionWrap
     key={section.id}
