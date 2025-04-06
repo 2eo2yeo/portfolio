@@ -438,17 +438,18 @@
     align-items: center;
     opacity: 0;
     background-color: var(--color-primary);
-    gap: 15px;
+    gap: 5px;
 }
 .project__metadata__title {
     position: relative;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .project__metadata__title::after {
     content: '';
   position: absolute;
-  bottom: -20px;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
   width: 50px;

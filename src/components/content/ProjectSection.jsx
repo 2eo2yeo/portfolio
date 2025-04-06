@@ -8,15 +8,19 @@ const allProjects = [
       img: `${process.env.PUBLIC_URL}/images/projects/kurly.png`,
       alt: "project1",
       title: "Market Kurly",
-      description: "HTML, CSS, React",
-      category: "Front-end",
+      subtitle: "쇼핑몰 클론코딩",
+      role: "장바구니, 결제페이지 담당",
+      description: "HTML, SCSS, React, Node.js, Express, MySQL",
+      category: "Front-end", 
       link: "https://github.com/react-project-green/kurly"
     },
     {
       img: `${process.env.PUBLIC_URL}/images/projects/beautyofjoseon.png`,
       alt: "project2",
       title: "Beauty Of Joseon",
-      description: "HTML, CSS, React",
+      subtitle: "쇼핑몰 클론 코딩",
+      role: "상세페이지, 상품목록 담당",
+      description: "HTML, SCSS, React, Node.js, Express, MySQL",
       category: "Front-end",
       link: "https://github.com/haon-wuchang/beautyofjoseon.git"
     },
@@ -24,7 +28,9 @@ const allProjects = [
       img: `${process.env.PUBLIC_URL}/images/projects/jinair.png`,
       alt: "project3",
       title: "Jin Air",
-      description: "HTML, CSS, React, Redux",
+      subtitle: "항공권 예약 클론 코딩",
+      role: "마이페이지, 쿠폰 등 담당",
+      description: "HTML, SCSS, React, Redux, Node.js, Express, MySQL",
       category: "Front-end",
       link: "https://github.com/teampj0320/jinAir.git"
     }

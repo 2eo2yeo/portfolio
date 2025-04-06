@@ -11,6 +11,8 @@ export default function Projects({ projectList }) {
               img={project.img}
               alt={project.alt}
               title={project.title}
+              subtitle={project.subtitle}
+              role={project.role}
               description={project.description}
             />
           </a>
