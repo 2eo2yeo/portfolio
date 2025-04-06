@@ -12,7 +12,7 @@ const allProjects = [
       role: "장바구니, 결제페이지 담당",
       description: "HTML, SCSS, React, Node.js, Express, MySQL",
       category: "Front-end", 
-      link: "https://github.com/react-project-green/kurly"
+      link: "http://kurly-pj-front.s3-website.ap-northeast-2.amazonaws.com/"
     },
     {
       img: `${process.env.PUBLIC_URL}/images/projects/beautyofjoseon.png`,
